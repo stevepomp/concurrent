@@ -3,6 +3,10 @@ package chapter03;
 import java.util.concurrent.TimeUnit;
 
 public class ThreadIsInterrupted {
+//    ClearInterrupted == false, 不擦除interrupt标识
+//    public boolean isInterrupted() {
+//        return isInterrupted(false);
+//    }
     public static void main(String[] args) throws InterruptedException {
         Thread thread1 = new Thread(() -> {
             while (true) {
